@@ -1,4 +1,5 @@
 jQuery(document).ready(function( $ ) {
+    console.log("main js calling");
 
   // Back to top button
   $(window).scroll(function() {
@@ -149,6 +150,9 @@ jQuery(document).ready(function( $ ) {
   //Google Map
   var get_latitude = $('#google-map').data('latitude');
   var get_longitude = $('#google-map').data('longitude');
+
+  console.log("Latitude:", get_latitude);
+  console.log("Longitude:", get_longitude);
 
   function initialize_google_map() {
     var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);

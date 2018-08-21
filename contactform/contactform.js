@@ -90,7 +90,26 @@ jQuery(document).ready(function($) {
     });
     if (ferror) return false;
     else var str = $(this).serialize();
-    $.ajax({
+      $("#sendMessageButton")
+      var name = $("input#name").val();
+      console.log("Name:", name);
+      $('#success').html("<div class='alert alert-success'>");
+      $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+          .append("</button>");
+      // $('#success > .alert-success').append("<strong>Your message has been sent. </strong>");
+      $('#success > .alert-success').append($("<strong>").text("Thank you " + name + " for Contacting Helping Youths Organization. Please chat with us, If you have any Query! We Will Respond you Quickly"));
+
+      $('#success > .alert-success')
+          .append('</div>');
+      //clear all fields
+      $('#contactForm').trigger("reset");
+      $('#success > .alert-success').on('close.bs.alert', function () {
+          // window.open('https://tinyletter.com/Nag_Sambra', 'popupwindow', 'scrollbars=yes,width=800,height=600');
+          setTimeout(function () {
+              location.reload();
+          }, 2000);
+      });
+    /*$.ajax({
       type: "POST",
       url: "contactform/contactform.php",
       data: str,
@@ -107,7 +126,7 @@ jQuery(document).ready(function($) {
         }
 
       }
-    });
+    });*/
     return false;
   });
 

@@ -591,7 +591,7 @@
         </div>
       </div>
 
-      <div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>
+      <div id="google-map" data-latitude="12.8023974" data-longitude="77.3971907"></div>
 
       <div class="container">
         <div class="form">
@@ -616,7 +616,8 @@
               <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
               <div class="validation"></div>
             </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+              <div id="success"></div>
+            <div class="text-center"><button type="submit" id="sendMessageButton">Send Message</button></div>
           </form>
         </div>
 
@@ -649,6 +650,29 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118703301-2"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+          dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-118703301-2');
+  </script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+          s1.async=true;
+          s1.src='https://embed.tawk.to/5b7c3756f31d0f771d84026a/default';
+          s1.charset='UTF-8';
+          s1.setAttribute('crossorigin','*');
+          s0.parentNode.insertBefore(s1,s0);
+      })();
+  </script>
+  <!--End of Tawk.to Script-->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -659,7 +683,7 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/magnific-popup/magnific-popup.min.js"></script>
   <script src="lib/sticky/sticky.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACwJGtezaDfjiXvQJmfyC1xiqThV73dho"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 
