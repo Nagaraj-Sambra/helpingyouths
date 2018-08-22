@@ -689,6 +689,16 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script>
+      $(document).keydown(function(e){
+          if(e.which === 123){
+              return false;
+          }
+      });
+      $(document).bind("contextmenu",function(e) {
+          e.preventDefault();
+      });
+  </script>
 
 </body>
 </html>
